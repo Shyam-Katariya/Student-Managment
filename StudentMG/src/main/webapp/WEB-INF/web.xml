@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+
+ 	<servlet>
+		<servlet-name>add</servlet-name>
+		<servlet-class>in.adit.StudentMng</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>add</servlet-name>
+		<url-pattern>/submit</url-pattern>
+	</servlet-mapping> 
+	
+	
+	<servlet>
+		<servlet-name>home</servlet-name>
+		<servlet-class>home.jsp</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>home</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	  <servlet-name>LoginValidation</servlet-name>
+	  <servlet-class>in.ac.adit.contoller.LoginValidation</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>LoginValidation</servlet-name>
+	  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+	  <servlet-name>DeleteStudent</servlet-name>
+	  <servlet-class>in.ac.adit.contoller.DeleteStudent</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>DeleteStudent</servlet-name>
+	  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+
+</web-app>
